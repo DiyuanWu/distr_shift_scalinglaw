@@ -20,10 +20,16 @@ tau: 0.1               # noise variance
 * Signal (train/test): $\beta_i \propto i^{-\tfrac{1}{2}(1+2\alpha r_{\cdot})}$
 * Regularization : $\lambda = (2^k)^{-\gamma}$
 
+
+
 ---
 
-
 ## Usage
+
+### 1) Run the experiment
+
+---
+
 
 ```bash
 python your_script.py config/example.yaml --savepath ./results
@@ -52,5 +58,19 @@ python your_script.py config/example.yaml --savepath ./results
 
 ---
 
+### 2) Plot with `plots.py`
 
-Specify your license (e.g., MIT/Apache-2.0/GPL) here. If you’re unsure, MIT is a permissive default for open-source code.
+```bash
+python plots.py ./results --filename results.pt
+# → saves ./results/kernel_re.png
+```
+---
+
+### Example end-to-end
+
+```bash
+
+python your_script.py config/example.yaml --savepath ./results
+python plots.py ./results --filename results.pt
+```
+
