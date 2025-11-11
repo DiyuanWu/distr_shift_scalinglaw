@@ -32,7 +32,7 @@ tau: 0.1               # noise variance
 
 
 ```bash
-python your_script.py config/example.yaml --savepath ./results
+python main.py config/example.yaml --savepath ./results
 ```
 
 **Arguments**
@@ -70,7 +70,7 @@ python plots.py ./results --filename results.pt
 
 ```bash
 
-python your_script.py config/example.yaml --savepath ./results
+python main.py config/example.yaml --savepath ./results
 python plots.py ./results --filename results.pt
 ```
 
