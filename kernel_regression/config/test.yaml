@@ -1,0 +1,6 @@
+gamma_reg_train: -0.1
+alpha_train: 1.8
+r_train: 1.2
+alpha_test: 2.8
+r_test: 0.5
+tau: 0.1
